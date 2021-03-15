@@ -7,11 +7,25 @@ sample_api_docs
 ### Login API
 
 ##### Request Info
-`GET` : `http://localhost:8000/v1/login/`
+`POST` : `http://localhost:8000/v1/login/`
 
 ##### Request Headers
 ```json {"Content-type": "application/json"} ```
 
-### Signup API
-
-### Stores API
+##### Request Response
+```json
+{
+  "status": true,
+  "payload": [
+    {
+      "_id": 1,
+      "name": "NAME",
+      "email": "EMAIL",
+      "token": "GENERATED_USER_TOKEN",
+      "_created": "2021-03-14 12:32:59.998882",
+      "_updated": "2021-03-14 12:32:59.998909"
+    }
+  ],
+  "message": "Login Api view"
+}
+```
