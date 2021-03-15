@@ -55,7 +55,7 @@ sample_api_docs
 }
 ```
 
--Error Password didn't Match
+- Error Password didn't Match
 
 ```
 {
