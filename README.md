@@ -6,8 +6,11 @@ sample_api_docs
 
 ### Login API
 
-##### Request Type : `GET`
-##### Request URL : `http://localhost:8000/v1/login/`
+##### Request Info
+`GET` : `http://localhost:8000/v1/login/`
+
+##### Request Headers
+```json {"Content-type": "application/json"} ```
 
 ### Signup API
 
