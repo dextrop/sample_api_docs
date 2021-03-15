@@ -31,12 +31,37 @@ sample_api_docs
 ```
 
 ##### Error Response
-In case request is missing a key
+- In case request is missing a key
 ```json
 {
   "status": false,
   "payload": null,
   "message": "Missing Key 'KEY_NAME' in request data",
+  "error": {
+    "code": 400
+  }
+}
+```
+
+- Error Email Does Not Exits ( Email is not present in DB while trying to login )
+```
+{
+  "status": false,
+  "payload": null,
+  "message": "Email Does not exits",
+  "error": {
+    "code": 400
+  }
+}
+```
+
+-Error Password didn't Match
+
+```
+{
+  "status": false,
+  "payload": null,
+  "message": "Invalid Password!",
   "error": {
     "code": 400
   }
