@@ -44,7 +44,7 @@ sample_api_docs
 ```
 
 - Error Email Does Not Exits ( Email is not present in DB while trying to login )
-```
+```json
 {
   "status": false,
   "payload": null,
@@ -57,7 +57,7 @@ sample_api_docs
 
 - Error Password didn't Match
 
-```
+```json
 {
   "status": false,
   "payload": null,
